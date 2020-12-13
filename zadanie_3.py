@@ -29,3 +29,20 @@ for insekt in owady:
     od = insekt['odnoza']
     suma_odnoz = suma_odnoz + (ilosc_owadow * od)
 print(suma_odnoz)
+
+# wersja 3
+
+koszyk = [
+    {'produkt': 'mleko', 'ilosc': 1, 'cena': 1.5, 'alergeny': 'laktoza'},
+    {'produkt': 'czekolada', 'ilosc': 2, 'cena': 3, 'alergeny': 'orzechy'},
+    {'produkt': 'woda', 'ilosc': 4, 'cena': 3.5, 'alergeny': 'brak'}
+]
+
+for poz in koszyk:
+    alerg = poz['alergeny']
+    if alerg == 'laktoza':
+        print("Uwaga ten produkt zawiera laktoze")
+    elif alerg == 'orzechy':
+        print("Uwaga ten produkt zawiera orzechy")
+    else:
+        print("Ten produkt jest ok")
